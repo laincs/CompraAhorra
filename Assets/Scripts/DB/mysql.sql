@@ -1,0 +1,42 @@
+CREATE TABLE Items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    itemName VARCHAR(255) NOT NULL,
+    description TEXT,
+    stock INT NOT NULL,
+    price INT NOT NULL,
+    rating INT,
+    idImage INT
+);
+
+-- Insertando datos en la tabla Items
+INSERT INTO Items (itemName, description, stock, price, rating, idImage) VALUES
+('Smartphone XYZ', 'Teléfono inteligente de última generación', 50, 599, 4, 1),
+('Laptop ABC', 'Portátil ultradelgado con potente rendimiento', 30, 899, 5, 2),
+('Cámara DSLR', 'Cámara profesional para fotografía', 20, 1299, 4, 3),
+('Auriculares Inalámbricos', 'Auriculares con cancelación de ruido', 100, 149, 4, 4),
+('Libro: "El Principito"', 'Novela clásica de Antoine de Saint-Exupéry', 80, 19, 5, 5),
+('Reloj Inteligente', 'Reloj con seguimiento de actividad y monitorización del sueño', 60, 129, 3, 6),
+('Zapatillas Deportivas', 'Zapatillas para correr cómodas y elegantes', 40, 79, 4, 7),
+('Silla Ergonómica', 'Silla de oficina ajustable para mayor comodidad', 25, 199, 5, 8),
+('TV LED 55"', 'Televisor LED de alta definición', 15, 599, 4, 9),
+('Juego de Mesa: "Catan"', 'Juego de estrategia para la familia', 50, 39, 5, 10),
+('Robot Aspirador', 'Aspiradora automática para la limpieza del hogar', 35, 249, 4, 11),
+('Pendientes de Diamantes', 'Elegantes pendientes de diamantes', 120, 499, 5, 12),
+('Telescopio Profesional', 'Telescopio para observación astronómica', 10, 899, 4, 13),
+('Tabla de Paddle Surf', 'Tabla para la práctica de paddle surf', 18, 299, 4, 14),
+('Pelota de Fútbol', 'Pelota oficial de fútbol para entrenamientos', 75, 29, 4, 15),
+('Licuadora Multifuncional', 'Licuadora con múltiples funciones', 28, 69, 3, 16),
+('Maletín Ejecutivo', 'Maletín para portátil con estilo ejecutivo', 40, 89, 4, 17),
+('Impresora Multifunción', 'Impresora para oficina con funciones de escaneo y copiado', 22, 129, 4, 18),
+('Collar de Perlas', 'Collar clásico de perlas naturales', 55, 199, 5, 19),
+('Mesa de Centro Moderna', 'Mesa de centro elegante y funcional', 30, 149, 4, 20),
+('Cocina de Inducción', 'Cocina eléctrica de inducción para una cocción eficiente', 12, 399, 4, 21),
+('Lámpara de Pie', 'Lámpara de pie con diseño moderno', 48, 79, 3, 22),
+('Gafas de Sol de Marca', 'Gafas de sol de diseño de una marca reconocida', 70, 129, 4, 23),
+('Bicicleta de Montaña', 'Bicicleta todo terreno para aventuras al aire libre', 15, 599, 4, 24),
+('Sofá Reclinable', 'Sofá cómodo y reclinable para la sala de estar', 20, 499, 5, 25),
+('Teclado Mecánico para Gaming', 'Teclado diseñado para jugadores exigentes', 45, 89, 4, 26),
+('Mochila Impermeable', 'Mochila resistente al agua para actividades al aire libre', 60, 49, 4, 27),
+('Aspiradora de Mano', 'Aspiradora portátil para limpieza rápida', 40, 29, 4, 28),
+('Cuadro Artístico', 'Cuadro decorativo para embellecer el hogar', 65, 119, 5, 29),
+('Cargador Inalámbrico', 'Cargador inalámbrico para dispositivos móviles', 90, 19, 4, 30);
