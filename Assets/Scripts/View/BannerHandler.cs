@@ -11,4 +11,8 @@ public class BannerHandler : MonoBehaviour
             AppManager.instance.GoUserScene();
         }
     }
+
+    public void TriggerShopButton(){
+        AppManager.instance.TriggerLogOut();
+    }
 }

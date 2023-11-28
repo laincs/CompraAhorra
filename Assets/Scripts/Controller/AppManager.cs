@@ -25,6 +25,12 @@ public class AppManager : Instance<AppManager>
         authScene.SetActive(true);
     }
 
+    public void GoBuyScene(Item item){
+        OffAllObjects();
+        buyScene.SetActive(true);
+        FindAnyObjectByType<SceneBuyHandler>().UpdateView(item);
+    }
+
     public void GoUserScene(){
         OffAllObjects();
         userScene.SetActive(true);

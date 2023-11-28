@@ -21,4 +21,8 @@ public class MenuItem : MonoBehaviour
         this.desc.text = desc;
         this.stock.text = $"Quedan {stock}";
     }
+
+    public void TryBuy(){
+        AppManager.instance.GoBuyScene(this.item);
+    }
 }
