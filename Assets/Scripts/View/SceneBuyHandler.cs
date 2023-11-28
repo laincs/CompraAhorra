@@ -23,4 +23,8 @@ public class SceneBuyHandler : MonoBehaviour
         TMP_Stock.text = $"+{item.stock} Unidades";
     }
 
+    public void AddToCart(){
+        AppManager.instance.AddToCart(item);
+    }
+
 }

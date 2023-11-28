@@ -8,6 +8,7 @@ public class AppManager : Instance<AppManager>
     [Header("User Data")]
     public string username;
     public User userData;
+    public List<Item> cart = new List<Item>();
 
     [Header("View References")]
     public TMP_Text hiText;
@@ -19,10 +20,26 @@ public class AppManager : Instance<AppManager>
     public GameObject authScene;
     public GameObject userScene;
     public GameObject loadingScene;
+    public GameObject thankScene;
+
+    public void AddToCart(Item item){
+        cart.Add(item);
+        GoCartScene();
+    }
 
     public void GoAuthScene(){
         OffAllObjects();
         authScene.SetActive(true);
+    }
+
+    public void GoThankScene(){
+        OffAllObjects();
+        thankScene.SetActive(true);
+    }
+
+    public void GoCartScene(){
+        OffAllObjects();
+        cartScene.SetActive(true);
     }
 
     public void GoBuyScene(Item item){
@@ -47,6 +64,7 @@ public class AppManager : Instance<AppManager>
         if(authScene!=null) authScene.SetActive(false);
         if(userScene!=null) userScene.SetActive(false);
         if(loadingScene!=null) loadingScene.SetActive(false);
+        if(thankScene!=null) thankScene.SetActive(false);
     }
 
     public void TriggerAuth(){

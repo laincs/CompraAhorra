@@ -15,4 +15,8 @@ public class BannerHandler : MonoBehaviour
     public void TriggerShopButton(){
         AppManager.instance.TriggerLogOut();
     }
+
+    public void TriggerCartButton(){
+        AppManager.instance.GoCartScene();
+    }
 }
